@@ -12,7 +12,7 @@ namespace WindowsFormsPlane
 {
     public partial class FormPlane : Form
     {
-        private Plane plane;
+        private RadarPlane plane;
 
         /// <summary>
         /// Конструктор
@@ -21,6 +21,7 @@ namespace WindowsFormsPlane
         {
             InitializeComponent();
         }
+
         /// <summary>
         /// Метод отрисовки машины
         /// </summary>
@@ -40,8 +41,9 @@ namespace WindowsFormsPlane
         private void CreateButton_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-
-            plane = new Plane(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Gray);
+            int radarType = 1;
+            plane = new RadarPlane(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Gray,
+           Color.Black, true, radarType, true, true);
             plane.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), picturePlane.Width,
            picturePlane.Height);
             Draw();
@@ -92,17 +94,6 @@ namespace WindowsFormsPlane
         private void buttonLeft_Click(object sender, EventArgs e)
         {
             buttonMove_Click(sender, e);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Random rnd = new Random();
-            int radarType = 1;
-            plane = new RadarPlane(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Gray,
-           Color.Black, true, radarType, true, true);
-            plane.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), picturePlane.Width,
-           picturePlane.Height);
-            Draw();
         }
     }
 }

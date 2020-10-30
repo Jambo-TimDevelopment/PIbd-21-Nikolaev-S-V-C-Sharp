@@ -35,16 +35,15 @@
             this.buttonRight = new System.Windows.Forms.Button();
             this.picturePlane = new System.Windows.Forms.PictureBox();
             this.CreateButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picturePlane)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonUp
             // 
             this.buttonUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonUp.Image")));
-            this.buttonUp.Location = new System.Drawing.Point(798, 416);
+            this.buttonUp.Location = new System.Drawing.Point(798, 374);
             this.buttonUp.Name = "buttonUp";
-            this.buttonUp.Size = new System.Drawing.Size(75, 40);
+            this.buttonUp.Size = new System.Drawing.Size(75, 65);
             this.buttonUp.TabIndex = 1;
             this.buttonUp.UseVisualStyleBackColor = true;
             this.buttonUp.Click += new System.EventHandler(this.buttonUp_Click);
@@ -52,9 +51,9 @@
             // buttonDown
             // 
             this.buttonDown.Image = ((System.Drawing.Image)(resources.GetObject("buttonDown.Image")));
-            this.buttonDown.Location = new System.Drawing.Point(798, 462);
+            this.buttonDown.Location = new System.Drawing.Point(798, 445);
             this.buttonDown.Name = "buttonDown";
-            this.buttonDown.Size = new System.Drawing.Size(75, 48);
+            this.buttonDown.Size = new System.Drawing.Size(75, 65);
             this.buttonDown.TabIndex = 2;
             this.buttonDown.UseVisualStyleBackColor = true;
             this.buttonDown.Click += new System.EventHandler(this.DownMoveButton_Click);
@@ -62,9 +61,9 @@
             // buttonLeft
             // 
             this.buttonLeft.Image = ((System.Drawing.Image)(resources.GetObject("buttonLeft.Image")));
-            this.buttonLeft.Location = new System.Drawing.Point(717, 462);
+            this.buttonLeft.Location = new System.Drawing.Point(717, 445);
             this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(75, 48);
+            this.buttonLeft.Size = new System.Drawing.Size(75, 65);
             this.buttonLeft.TabIndex = 3;
             this.buttonLeft.UseVisualStyleBackColor = true;
             this.buttonLeft.Click += new System.EventHandler(this.buttonLeft_Click);
@@ -72,9 +71,9 @@
             // buttonRight
             // 
             this.buttonRight.Image = ((System.Drawing.Image)(resources.GetObject("buttonRight.Image")));
-            this.buttonRight.Location = new System.Drawing.Point(879, 462);
+            this.buttonRight.Location = new System.Drawing.Point(879, 445);
             this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(75, 48);
+            this.buttonRight.Size = new System.Drawing.Size(75, 65);
             this.buttonRight.TabIndex = 4;
             this.buttonRight.UseVisualStyleBackColor = true;
             this.buttonRight.Click += new System.EventHandler(this.buttonRight_Click);
@@ -94,26 +93,15 @@
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(239, 32);
             this.CreateButton.TabIndex = 6;
-            this.CreateButton.Text = "Create base object";
+            this.CreateButton.Text = "Create object";
             this.CreateButton.UseVisualStyleBackColor = true;
             this.CreateButton.Click += new System.EventHandler(this.CreateButton_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(239, 32);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Create advanced object";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormPlane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1052, 510);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.CreateButton);
             this.Controls.Add(this.buttonRight);
             this.Controls.Add(this.buttonLeft);
@@ -135,7 +123,6 @@
         private System.Windows.Forms.Button buttonRight;
         private System.Windows.Forms.PictureBox picturePlane;
         private System.Windows.Forms.Button CreateButton;
-        private System.Windows.Forms.Button button1;
     }
 }
 
