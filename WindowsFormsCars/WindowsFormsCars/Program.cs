@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsPlane;
 
 namespace WindowsFormsPlane
 {
@@ -16,7 +17,7 @@ namespace WindowsFormsPlane
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPlane());
+            Application.Run(new FormParking());
         }
     }
 }

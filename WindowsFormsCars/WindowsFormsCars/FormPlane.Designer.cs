@@ -42,9 +42,9 @@
             // buttonUp
             // 
             this.buttonUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonUp.Image")));
-            this.buttonUp.Location = new System.Drawing.Point(798, 386);
+            this.buttonUp.Location = new System.Drawing.Point(798, 362);
             this.buttonUp.Name = "buttonUp";
-            this.buttonUp.Size = new System.Drawing.Size(75, 61);
+            this.buttonUp.Size = new System.Drawing.Size(75, 65);
             this.buttonUp.TabIndex = 1;
             this.buttonUp.UseVisualStyleBackColor = true;
             this.buttonUp.Click += new System.EventHandler(this.buttonMove_Click);
@@ -52,9 +52,9 @@
             // buttonDown
             // 
             this.buttonDown.Image = ((System.Drawing.Image)(resources.GetObject("buttonDown.Image")));
-            this.buttonDown.Location = new System.Drawing.Point(798, 444);
+            this.buttonDown.Location = new System.Drawing.Point(798, 433);
             this.buttonDown.Name = "buttonDown";
-            this.buttonDown.Size = new System.Drawing.Size(75, 66);
+            this.buttonDown.Size = new System.Drawing.Size(75, 77);
             this.buttonDown.TabIndex = 2;
             this.buttonDown.UseVisualStyleBackColor = true;
             this.buttonDown.Click += new System.EventHandler(this.buttonMove_Click);
@@ -62,9 +62,9 @@
             // buttonLeft
             // 
             this.buttonLeft.Image = ((System.Drawing.Image)(resources.GetObject("buttonLeft.Image")));
-            this.buttonLeft.Location = new System.Drawing.Point(717, 444);
+            this.buttonLeft.Location = new System.Drawing.Point(717, 433);
             this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(75, 66);
+            this.buttonLeft.Size = new System.Drawing.Size(75, 77);
             this.buttonLeft.TabIndex = 3;
             this.buttonLeft.UseVisualStyleBackColor = true;
             this.buttonLeft.Click += new System.EventHandler(this.buttonMove_Click);
@@ -72,9 +72,9 @@
             // buttonRight
             // 
             this.buttonRight.Image = ((System.Drawing.Image)(resources.GetObject("buttonRight.Image")));
-            this.buttonRight.Location = new System.Drawing.Point(879, 444);
+            this.buttonRight.Location = new System.Drawing.Point(879, 433);
             this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(75, 66);
+            this.buttonRight.Size = new System.Drawing.Size(75, 77);
             this.buttonRight.TabIndex = 4;
             this.buttonRight.UseVisualStyleBackColor = true;
             this.buttonRight.Click += new System.EventHandler(this.buttonMove_Click);
@@ -96,7 +96,7 @@
             this.CreateButton.TabIndex = 6;
             this.CreateButton.Text = "Create base object";
             this.CreateButton.UseVisualStyleBackColor = true;
-            this.CreateButton.Click += new System.EventHandler(this.CreateButton_Click);
+            this.CreateButton.Click += new System.EventHandler(this.CreatePlaneButton_Click);
             // 
             // button1
             // 
@@ -106,7 +106,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Create advanced object";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonCreateRadarPlane_Click);
+            this.button1.Click += new System.EventHandler(this.CreateRadarPlaneButton_Click);
             // 
             // FormPlane
             // 

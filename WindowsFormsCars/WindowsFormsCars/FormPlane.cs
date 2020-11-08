@@ -12,7 +12,7 @@ namespace WindowsFormsPlane
 {
     public partial class FormPlane : Form
     {
-        private Plane plane;
+        private ITransport plane;
 
         /// <summary>
         /// Конструктор
@@ -21,8 +21,19 @@ namespace WindowsFormsPlane
         {
             InitializeComponent();
         }
+
         /// <summary>
-        /// Метод отрисовки машины
+        /// Передача самолета на форму
+        /// </summary>
+        /// <param name="car"></param>
+        public void SetCar(ITransport plane)
+        {
+            this.plane = plane;
+            Draw();
+        }
+
+        /// <summary>
+        /// Метод отрисовки самолета
         /// </summary>
         private void Draw()
         {
@@ -32,12 +43,13 @@ namespace WindowsFormsPlane
             plane.DrawTransport(gr);
             picturePlane.Image = bmp;
         }
+
         /// <summary>
         /// Обработка нажатия кнопки "Создать"
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void CreateButton_Click(object sender, EventArgs e)
+        private void CreatePlaneButton_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
 
@@ -74,7 +86,7 @@ namespace WindowsFormsPlane
             Draw();
         }
 
-        private void buttonCreateRadarPlane_Click(object sender, EventArgs e)
+        private void CreateRadarPlaneButton_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
             int radarType = 1;
