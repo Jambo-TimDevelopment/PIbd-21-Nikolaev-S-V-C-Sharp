@@ -48,8 +48,8 @@ namespace WindowsFormsPlane
         /// <param name="sideSpoiler">Признак наличия боковых спойлеров</param>
         /// <param name="backSpoiler">Признак наличия заднего спойлера</param>
         /// <param name="sportLine">Признак наличия гоночной полосы</param>
-        public RadarPlane(int maxSpeed, float weight, Color mainColor, Color dopColor,
-            bool radar, int typeRadar, bool antenns, bool engine) : base(maxSpeed, weight, mainColor)
+        public RadarPlane(int maxSpeed, float weight, Color mainColor, Color dopColor, 
+            bool radar, int typeRadar, bool antenns, bool engine) : base( maxSpeed,  weight,  mainColor)
         {
             MaxSpeed = maxSpeed;
             Weight = weight;
@@ -60,7 +60,7 @@ namespace WindowsFormsPlane
             TypeRadar = typeRadar;
             Antenns = antenns;
             Engine = engine;
-
+            
         }
 
         /// <summary>
@@ -92,7 +92,7 @@ namespace WindowsFormsPlane
             {
                 switch (TypeRadar)
                 {
-                    case 0:
+                    case 0: 
                         {
                             g.FillEllipse(brDop, _startPosX + 45, _startPosY + 40, 40, 40);
                             g.DrawEllipse(pen, _startPosX + 45, _startPosY + 40, 40, 40);
