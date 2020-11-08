@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsCars.Properties
+namespace WindowsFormsPlane.Properties
 {
 
 

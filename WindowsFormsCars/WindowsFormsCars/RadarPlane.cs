@@ -20,7 +20,7 @@ namespace WindowsFormsPlane
         /// <summary>
         /// Тип двигателей
         /// </summary>
-        public bool EngineType { private set; get; }
+        public bool Engine { private set; get; }
 
         /// <summary>
         /// Наличие радара
@@ -48,8 +48,8 @@ namespace WindowsFormsPlane
         /// <param name="sideSpoiler">Признак наличия боковых спойлеров</param>
         /// <param name="backSpoiler">Признак наличия заднего спойлера</param>
         /// <param name="sportLine">Признак наличия гоночной полосы</param>
-        public RadarPlane(int maxSpeed, float weight, Color mainColor, Color dopColor, 
-            bool radar, int typeRadar, bool antenns, bool engineType) : base( maxSpeed,  weight,  mainColor)
+        public RadarPlane(int maxSpeed, float weight, Color mainColor, Color dopColor,
+            bool radar, int typeRadar, bool antenns, bool engine) : base(maxSpeed, weight, mainColor)
         {
             MaxSpeed = maxSpeed;
             Weight = weight;
@@ -59,8 +59,8 @@ namespace WindowsFormsPlane
             Radar = radar;
             TypeRadar = typeRadar;
             Antenns = antenns;
-            EngineType = engineType;
-            
+            Engine = engine;
+
         }
 
         /// <summary>
@@ -69,11 +69,17 @@ namespace WindowsFormsPlane
         /// <param name="g"></param>
         public override void DrawTransport(Graphics g)
         {
-            base.DrawTransport(g);
-
             Pen pen = new Pen(Color.Black);
             Brush brMain = new SolidBrush(MainColor);
             Brush brDop = new SolidBrush(DopColor);
+
+            if (Engine)
+            {
+                g.FillRectangle(brDop, _startPosX + 75, _startPosY + 20, 30, 10);
+                g.FillRectangle(brDop, _startPosX + 75, _startPosY + 92, 30, 10);
+            }
+
+            base.DrawTransport(g);
 
             // Рисуем радар 
             if (Antenns)
@@ -86,7 +92,7 @@ namespace WindowsFormsPlane
             {
                 switch (TypeRadar)
                 {
-                    case 0: 
+                    case 0:
                         {
                             g.FillEllipse(brDop, _startPosX + 45, _startPosY + 40, 40, 40);
                             g.DrawEllipse(pen, _startPosX + 45, _startPosY + 40, 40, 40);
@@ -96,7 +102,7 @@ namespace WindowsFormsPlane
                     case 1:
                         {
                             g.DrawEllipse(pen, _startPosX + 45, _startPosY + 40, 40, 40);
-                            g.FillEllipse(brMain, _startPosX + 45, _startPosY + 40, 40, 40);
+                            g.FillEllipse(brDop, _startPosX + 45, _startPosY + 40, 40, 40);
                             g.DrawLine(pen, _startPosX + 65, _startPosY + 40, _startPosX + 65, _startPosY + 80);
                             g.DrawLine(pen, _startPosX + 45, _startPosY + 60, _startPosX + 85, _startPosY + 60);
                         }
