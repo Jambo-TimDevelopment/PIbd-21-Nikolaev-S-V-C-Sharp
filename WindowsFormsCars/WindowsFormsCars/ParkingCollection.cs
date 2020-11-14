@@ -55,9 +55,24 @@ namespace WindowsFormsPlane
         /// <param name="name">Название парковки</param>
         public void DelParking(string name)
         {
+            var list = parkingStages.AsEnumerable();
+
+            
+            
             if (parkingStages.ContainsKey(name))
             {
                 parkingStages.Remove(name);
+            }
+        }
+
+        public void DelParking(int name)
+        {
+            if (name < Keys.Count && name >= 0)
+            {
+                if (Keys.Contains(Keys[name]))
+                {
+                    parkingStages.Remove(Keys[name]);
+                }
             }
         }
 

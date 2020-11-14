@@ -33,13 +33,12 @@
             this.GetCar = new System.Windows.Forms.Button();
             this.maskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.PlaceParking = new System.Windows.Forms.Label();
-            this.buttonSetPlane = new System.Windows.Forms.Button();
             this.listBoxParkings = new System.Windows.Forms.ListBox();
             this.buttonDelParking = new System.Windows.Forms.Button();
             this.buttonAddParking = new System.Windows.Forms.Button();
             this.textBoxNewLevelName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonSetRadarPlane = new System.Windows.Forms.Button();
+            this.buttonAddPlane = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxParking)).BeginInit();
             this.groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -94,16 +93,6 @@
             this.PlaceParking.TabIndex = 0;
             this.PlaceParking.Text = "Место";
             // 
-            // buttonSetPlane
-            // 
-            this.buttonSetPlane.Location = new System.Drawing.Point(856, 347);
-            this.buttonSetPlane.Name = "buttonSetPlane";
-            this.buttonSetPlane.Size = new System.Drawing.Size(185, 90);
-            this.buttonSetPlane.TabIndex = 3;
-            this.buttonSetPlane.Text = "Припарковать самолет";
-            this.buttonSetPlane.UseVisualStyleBackColor = true;
-            this.buttonSetPlane.Click += new System.EventHandler(this.buttonSetPlane_Click);
-            // 
             // listBoxParkings
             // 
             this.listBoxParkings.FormattingEnabled = true;
@@ -150,28 +139,27 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Парковки";
             // 
-            // buttonSetRadarPlane
+            // buttonAddPlane
             // 
-            this.buttonSetRadarPlane.Location = new System.Drawing.Point(856, 443);
-            this.buttonSetRadarPlane.Name = "buttonSetRadarPlane";
-            this.buttonSetRadarPlane.Size = new System.Drawing.Size(185, 90);
-            this.buttonSetRadarPlane.TabIndex = 10;
-            this.buttonSetRadarPlane.Text = "Припарковать самолет с рвдвром";
-            this.buttonSetRadarPlane.UseVisualStyleBackColor = true;
-            this.buttonSetRadarPlane.Click += new System.EventHandler(this.buttonSetRadarPlane_Click);
+            this.buttonAddPlane.Location = new System.Drawing.Point(859, 396);
+            this.buttonAddPlane.Name = "buttonAddPlane";
+            this.buttonAddPlane.Size = new System.Drawing.Size(182, 59);
+            this.buttonAddPlane.TabIndex = 10;
+            this.buttonAddPlane.Text = "Добавить самолет";
+            this.buttonAddPlane.UseVisualStyleBackColor = true;
+            this.buttonAddPlane.Click += new System.EventHandler(this.buttonAddPlane_Click);
             // 
             // FormParking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 695);
-            this.Controls.Add(this.buttonSetRadarPlane);
+            this.Controls.Add(this.buttonAddPlane);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxNewLevelName);
             this.Controls.Add(this.buttonAddParking);
             this.Controls.Add(this.buttonDelParking);
             this.Controls.Add(this.listBoxParkings);
-            this.Controls.Add(this.buttonSetPlane);
             this.Controls.Add(this.groupBox);
             this.Controls.Add(this.pictureBoxParking);
             this.Name = "FormParking";
@@ -191,12 +179,11 @@
         private System.Windows.Forms.Button GetCar;
         private System.Windows.Forms.MaskedTextBox maskedTextBox;
         private System.Windows.Forms.Label PlaceParking;
-        private System.Windows.Forms.Button buttonSetPlane;
         private System.Windows.Forms.ListBox listBoxParkings;
         private System.Windows.Forms.Button buttonDelParking;
         private System.Windows.Forms.Button buttonAddParking;
         private System.Windows.Forms.TextBox textBoxNewLevelName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonSetRadarPlane;
+        private System.Windows.Forms.Button buttonAddPlane;
     }
 }

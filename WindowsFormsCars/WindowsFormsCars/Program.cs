@@ -7,6 +7,8 @@ using WindowsFormsPlane;
 
 namespace WindowsFormsPlane
 {
+    public delegate void PlaneDelegate(APlane car);
+
     static class Program
     {
         /// <summary>
