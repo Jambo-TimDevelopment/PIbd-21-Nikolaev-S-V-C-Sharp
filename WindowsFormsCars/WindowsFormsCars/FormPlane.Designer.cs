@@ -40,9 +40,9 @@
             // buttonUp
             // 
             this.buttonUp.Image = ((System.Drawing.Image)(resources.GetObject("buttonUp.Image")));
-            this.buttonUp.Location = new System.Drawing.Point(798, 377);
+            this.buttonUp.Location = new System.Drawing.Point(798, 416);
             this.buttonUp.Name = "buttonUp";
-            this.buttonUp.Size = new System.Drawing.Size(75, 62);
+            this.buttonUp.Size = new System.Drawing.Size(75, 40);
             this.buttonUp.TabIndex = 1;
             this.buttonUp.UseVisualStyleBackColor = true;
             this.buttonUp.Click += new System.EventHandler(this.buttonMove_Click);
@@ -50,9 +50,9 @@
             // buttonDown
             // 
             this.buttonDown.Image = ((System.Drawing.Image)(resources.GetObject("buttonDown.Image")));
-            this.buttonDown.Location = new System.Drawing.Point(798, 445);
+            this.buttonDown.Location = new System.Drawing.Point(798, 462);
             this.buttonDown.Name = "buttonDown";
-            this.buttonDown.Size = new System.Drawing.Size(75, 65);
+            this.buttonDown.Size = new System.Drawing.Size(75, 48);
             this.buttonDown.TabIndex = 2;
             this.buttonDown.UseVisualStyleBackColor = true;
             this.buttonDown.Click += new System.EventHandler(this.buttonMove_Click);
@@ -60,9 +60,9 @@
             // buttonLeft
             // 
             this.buttonLeft.Image = ((System.Drawing.Image)(resources.GetObject("buttonLeft.Image")));
-            this.buttonLeft.Location = new System.Drawing.Point(717, 445);
+            this.buttonLeft.Location = new System.Drawing.Point(717, 462);
             this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(75, 65);
+            this.buttonLeft.Size = new System.Drawing.Size(75, 48);
             this.buttonLeft.TabIndex = 3;
             this.buttonLeft.UseVisualStyleBackColor = true;
             this.buttonLeft.Click += new System.EventHandler(this.buttonMove_Click);
@@ -70,9 +70,9 @@
             // buttonRight
             // 
             this.buttonRight.Image = ((System.Drawing.Image)(resources.GetObject("buttonRight.Image")));
-            this.buttonRight.Location = new System.Drawing.Point(879, 445);
+            this.buttonRight.Location = new System.Drawing.Point(879, 462);
             this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(75, 65);
+            this.buttonRight.Size = new System.Drawing.Size(75, 48);
             this.buttonRight.TabIndex = 4;
             this.buttonRight.UseVisualStyleBackColor = true;
             this.buttonRight.Click += new System.EventHandler(this.buttonMove_Click);
