@@ -23,21 +23,35 @@ namespace WindowsFormsPlane
         private readonly int planeHeight = 120;
 
         /// <summary>
+        /// Разделитель для записи информации по объекту в файл
+        /// </summary>
+        protected readonly char separator = ';';
+
+        /// <summary>
         /// Конструктор
         /// </summary>
         /// <param name="maxSpeed">Максимальная скорость</param>
         /// <param name="weight">Вес автомобиля</param>
         /// <param name="mainColor">Основной цвет кузова</param>
-        /// <param name="dopColor">Дополнительный цвет</param>
-        /// <param name="frontSpoiler">Признак наличия переднего спойлера</param>
-        /// <param name="sideSpoiler">Признак наличия боковых спойлеров</param>
-        /// <param name="backSpoiler">Признак наличия заднего спойлера</param>
-        /// <param name="sportLine">Признак наличия гоночной полосы</param>
         public Plane(int maxSpeed, float weight, Color mainColor)
         {
             MaxSpeed = maxSpeed;
             Weight = weight;
             MainColor = mainColor;
+        }
+        /// <summary>
+        /// Конструктор для загрузки с файла
+        /// </summary>
+        /// <param name="info">Информация по объекту</param>
+        public Plane(string info)
+        {
+            string[] strs = info.Split(separator);
+            if (strs.Length == 3)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+            }
         }
 
         /// <summary>
@@ -96,6 +110,27 @@ namespace WindowsFormsPlane
             g.FillRectangle(brMain, _startPosX + 10, _startPosY + 50, 100, 20);
             g.FillEllipse(brMain, _startPosX + 10, _startPosY + 30, 20, 60);
             g.FillEllipse(brMain, _startPosX + 70, _startPosY, 20, 120);
+        }
+
+        public override string ToString()
+        {
+            return $"{MaxSpeed}{separator}{Weight}{separator}{MainColor.Name}";
+        }
+
+        public string GetPlaneString()
+        {
+            return $"{MaxSpeed}{separator}{Weight}{separator}{MainColor.Name}";
+        }
+
+        public void LoadPlane(string info, char dopSeparator)
+        {
+            string[] strs = info.Split(separator)[1].Split(dopSeparator);
+            if (strs.Length == 3)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+            }
         }
     }
 }
