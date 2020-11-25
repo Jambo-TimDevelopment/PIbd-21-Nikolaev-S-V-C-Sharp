@@ -38,6 +38,27 @@ namespace WindowsFormsPlane
         public int TypeRadar { private set; get; }
 
         /// <summary>
+        /// Конструктор для загрузки с файла
+        /// </summary>
+        /// <param name="info"></param>
+        public RadarPlane(string info) : base(info)
+        {
+            string[] strs = info.Split(separator);
+            if (strs.Length == 8)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+                DopColor = Color.FromName(strs[3]);
+
+                Radar = Convert.ToBoolean(strs[4]);
+                TypeRadar = Convert.ToInt32(strs[5]);
+                Antenns = Convert.ToBoolean(strs[6]);
+                Engine = Convert.ToBoolean(strs[7]);
+            }
+        }
+
+        /// <summary>
         /// Конструктор
         /// </summary>
         /// <param name="maxSpeed">Максимальная скорость</param>
@@ -119,5 +140,39 @@ namespace WindowsFormsPlane
         {
             DopColor = color;
         }
+
+        public override string ToString()
+        {
+            return
+           $"{base.ToString()}{separator}{DopColor.Name}{separator}{Radar}{separator}" +
+           $"{TypeRadar}{separator}{Antenns}{separator}{Engine}";
+        }
+
+        public string GetPlaneString()
+        {
+            return
+           $"{base.ToString()}{separator}{DopColor.Name}{separator}{Radar}{separator}" +
+           $"{TypeRadar}{separator}{Antenns}{separator}{Engine}";
+        }
+
+
+        public void LoadRadarPlane(string info, char dopSeparator) 
+        {
+
+            string[] strs = info.Split(separator)[1].Split(dopSeparator);
+            if (strs.Length == 8)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+                DopColor = Color.FromName(strs[3]);
+
+                Radar = Convert.ToBoolean(strs[4]);
+                TypeRadar = Convert.ToInt32(strs[5]);
+                Antenns = Convert.ToBoolean(strs[6]);
+                Engine = Convert.ToBoolean(strs[7]);
+            }
+        }
+
     }
 }
