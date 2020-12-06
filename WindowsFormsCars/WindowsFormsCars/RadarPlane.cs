@@ -148,7 +148,7 @@ namespace WindowsFormsPlane
            $"{TypeRadar}{separator}{Antenns}{separator}{Engine}";
         }
 
-        public string GetPlaneString()
+        public new string GetPlaneString()
         {
             return
            $"{base.ToString()}{separator}{DopColor.Name}{separator}{Radar}{separator}" +
