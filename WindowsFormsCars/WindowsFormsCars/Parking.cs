@@ -69,6 +69,11 @@ namespace WindowsFormsPlane
         {
             if (p._places.Count >= p._maxCount)
             {
+                throw new ParkingOverflowException();
+            }
+
+            if (p._places.Count >= p._maxCount)
+            {
                 return false;
             }
             p._places.Add(plane);
@@ -86,14 +91,13 @@ namespace WindowsFormsPlane
         /// <returns></returns>
         public static T operator -(Parking<T> p, int index)
         {
-            if (index < -1 || index > p._places.Count)
+            if (index <= -1 || index >= p._places.Count)
             {
-                return null;
+                throw new ParkingNotFoundException(index);
             }
             T plane = p._places[index];
             p._places.RemoveAt(index);
             return plane;
-
         }
 
         /// <summary>

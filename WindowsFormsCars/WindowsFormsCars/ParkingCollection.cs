@@ -157,11 +157,11 @@ namespace WindowsFormsPlane
         /// </summary>
         /// <param name="filename"></param>
         /// <returns></returns>
-        public bool LoadData(string filename)
+        public void LoadData(string filename)
         {
             if (!File.Exists(filename))
             {
-                return false;
+                throw new FileNotFoundException();
             }
             using (StreamReader fs = new StreamReader(filename))
             {
@@ -175,7 +175,7 @@ namespace WindowsFormsPlane
                 else
                 {
                     //если нет такой записи, то это не те данные
-                    return false;
+                    throw new ArgumentException("Неверный формат файла");
                 }
 
                 APlane plane = null;
@@ -202,11 +202,10 @@ namespace WindowsFormsPlane
                         }
                         if (!(parkingStages[key] + plane))
                         {
-                            return false;
+                            throw new IndexOutOfRangeException("Не удалось загрузить автомобиль на парковку");
                         }
                     }
                 }
-                return true;
             }
         }
     }
