@@ -110,46 +110,40 @@ namespace WindowsFormsPlane
             byte[] info = new UTF8Encoding(true).GetBytes(text);
             stream.Write(info, 0, info.Length);
         }
-
+    
         /// <summary>
         /// Сохранение информации по автомобилям на парковках в файл
         /// </summary>
         /// <param name="filename">Путь и имя файла</param>
-        /// <returns></returns>
-        public bool SaveData(string filename)
+        public void SaveData(string filename)
         {
             if (File.Exists(filename))
             {
                 File.Delete(filename);
             }
-            using (StreamWriter fs = new StreamWriter(filename))
+            using (FileStream fs = new FileStream(filename, FileMode.Create))
             {
-                fs.Write($"ParkingCollection{Environment.NewLine}");
+                WriteToFile($"ParkingCollection{Environment.NewLine}", fs);
                 foreach (var level in parkingStages)
                 {
-                    fs.Write($"Parking{separator}{level.Key}{Environment.NewLine}");
-                    ITransport plane = null;
-                    for (int i = 0; (plane = level.Value.GetNext(i)) != null; i++)
+                    //Начинаем парковку
+                    WriteToFile($"Parking{separator}{level.Key}{Environment.NewLine}", fs);
+                    foreach (ITransport car in level.Value)
                     {
-                        if (plane != null)
+                        //Записываем тип мшаины
+                        if (car.GetType().Name == "Plane")
                         {
-                            //если место не пустое
-                            //Записываем тип машины
-                            if (plane.GetType().Name == "Plane")
-                            {
-                                fs.Write($"Plane{separator}");
-                            }
-                            if (plane.GetType().Name == "RadarPlane")
-                            {
-                                fs.Write($"RadarPlane{separator}");
-                            }
-                            //Записываемые параметры
-                            fs.Write(((Plane)plane).GetPlaneString() + Environment.NewLine);
+                            WriteToFile($"Plane{separator}", fs);
                         }
+                        if (car.GetType().Name == "RadarPlane")
+                        {
+                            WriteToFile($"RadarPlane{separator}", fs);
+                        }
+                        //Записываемые параметры
+                        WriteToFile(car + Environment.NewLine, fs);
                     }
                 }
             }
-            return true;
         }
 
         /// <summary>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace WindowsFormsPlane
     /// Параметризованный класс для хранения набора объектов от интерфейса ITransport
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class Parking<T> where T : class, ITransport
+    public class Parking<T> : IEnumerator<T>, IEnumerable<T> where T : class, ITransport
     {
         /// <summary>
         /// Список объектов, которые храним
@@ -44,6 +45,15 @@ namespace WindowsFormsPlane
         private readonly int _placeSizeHeight = 130;
 
         /// <summary>
+        /// Текущий элемент для вывода через IEnumerator (будет обращаться по своему индексу к ключу словаря, по которму будет возвращаться запись)
+        /// </summary>
+        private int _currentIndex;
+        
+        public T Current => _places[_currentIndex];
+        
+        object IEnumerator.Current => _places[_currentIndex];
+
+        /// <summary>
         /// Конструктор
         /// </summary>
         /// <param name="picWidth">Рамзер парковки - ширина</param>
@@ -56,6 +66,7 @@ namespace WindowsFormsPlane
             pictureWidth = picWidth;
             pictureHeight = picHeight;
             _places = new List<T>();
+            _currentIndex = -1;
         }
 
         /// <summary>
@@ -71,11 +82,11 @@ namespace WindowsFormsPlane
             {
                 throw new ParkingOverflowException();
             }
-
-            if (p._places.Count >= p._maxCount)
+            if (p._places.Contains(plane))
             {
-                return false;
+                throw new ParkingAlreadyHaveException();
             }
+
             p._places.Add(plane);
 
             return true;
@@ -144,6 +155,61 @@ namespace WindowsFormsPlane
                 return null;
             }
             return _places[index];
+        }
+
+        /// <summary>
+        /// Сортировка автомобилей на парковке
+        /// </summary>
+        public void Sort() => _places.Sort((IComparer<T>) new PlaneComparer());
+
+        /// <summary>
+        /// Метод интерфейса IEnumerator, вызываемый при удалении объекта
+        /// </summary>
+        public void Dispose()
+        {
+        }
+
+        /// <summary>
+        /// Метод интерфейса IEnumerator для перехода к следующему элементу или началу коллекции
+        /// </summary>
+        /// <returns></returns>
+        public bool MoveNext()
+        {
+            if (_currentIndex + 1 < _places.Count)
+            {
+                _currentIndex++;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+            // Реализовать логику
+        }
+
+        /// <summary>
+        /// Метод интерфейса IEnumerator для сброса и возврата к началу коллекции
+        /// </summary>
+        public void Reset()
+        {
+            _currentIndex = -1;
+        }
+
+        /// <summary>
+        /// Метод интерфейса IEnumerable
+        /// </summary>
+        public IEnumerator<T> GetEnumerator()
+        {
+            return this;
+        }
+
+        /// <summary>
+        /// Метод интерфейса IEnumerable
+        /// </summary>
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this;
         }
     }
 }
