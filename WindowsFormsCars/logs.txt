@@ -1,95 +1,33 @@
-2020-12-14 17:11:05.3203|INFO|WindowsFormsPlane.FormParking|Добавили парковку 1234
-2020-12-14 17:11:05.3653|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1234
-2020-12-14 17:11:10.1524|INFO|WindowsFormsPlane.FormParking|Добавили парковку 12345
-2020-12-14 17:11:10.1524|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1234
-2020-12-14 17:11:20.2104|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;White;Black;True;1;False;False
-2020-12-14 17:11:34.4392|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Sienna;Chartreuse;True;1;True;True
-2020-12-14 17:11:40.4459|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-14 17:11:46.2789|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Chartreuse
-2020-12-14 17:12:24.8659|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red;Sienna;False;1;False;True
-2020-12-14 17:12:31.2749|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-14 17:12:39.7013|INFO|WindowsFormsPlane.FormParking|Неизвестная ошибка при сохранении C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:12:54.2583|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:12:54.2673|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1234
-2020-12-14 17:15:37.7097|INFO|WindowsFormsPlane.FormParking|Добавили парковку 1
-2020-12-14 17:15:37.7527|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:15:41.2787|INFO|WindowsFormsPlane.FormParking|Добавили парковку 2
-2020-12-14 17:15:41.2787|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:15:55.9650|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;OliveDrab;Sienna;True;1;True;True
-2020-12-14 17:16:27.5813|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Sienna;Black;False;1;False;False
-2020-12-14 17:16:37.7823|INFO|WindowsFormsPlane.FormParking|Сохранено в файл C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:16:53.5965|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Chartreuse;Black;False;1;False;False
-2020-12-14 17:17:00.3204|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:17:00.3284|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:17:02.0334|INFO|WindowsFormsPlane.FormParking|Перешли на парковку2
-2020-12-14 17:17:02.7954|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:17:11.4708|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:17:11.4708|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:17:12.4918|INFO|WindowsFormsPlane.FormParking|Перешли на парковку2
-2020-12-14 17:17:12.9603|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:17:27.1578|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;OliveDrab;Sienna;True;1;True;True
-2020-12-14 17:17:39.4538|INFO|WindowsFormsPlane.FormParking|Сохранено в файл C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:17:55.0868|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:17:55.0968|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:17:56.4181|INFO|WindowsFormsPlane.FormParking|Перешли на парковку2
-2020-12-14 17:17:56.8626|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:19:25.5145|INFO|WindowsFormsPlane.FormParking|Добавили парковку 1
-2020-12-14 17:19:25.5525|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 17:19:32.7035|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;White;Black;True;1;False;False
-2020-12-14 17:19:41.6125|INFO|WindowsFormsPlane.FormParking|Сохранено в файл C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:19:46.5869|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 17:19:46.5959|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-14 18:30:56.3810|INFO|WindowsFormsPlane.FormParking|Добавили парковку 1234
-2020-12-14 18:30:56.4270|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1234
-2020-12-14 18:31:02.3510|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;White;Black;False;1;False;False
-2020-12-14 18:31:06.9790|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red
-2020-12-14 18:31:14.8157|INFO|WindowsFormsPlane.FormParking|Сохранено в файл C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 18:37:48.7273|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 18:37:48.7563|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1234
-2020-12-14 18:37:55.8340|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red
-2020-12-14 18:38:06.0500|INFO|WindowsFormsPlane.FormParking|Сохранено в файл C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 18:38:20.3913|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-14 18:38:20.3913|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1234
-2020-12-14 18:38:29.5787|INFO|WindowsFormsPlane.FormParking|Добавили парковку 123
-2020-12-14 18:38:29.5787|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1234
-2020-12-14 18:38:32.5767|INFO|WindowsFormsPlane.FormParking|Добавили парковку 12
-2020-12-14 18:38:32.5767|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1234
-2020-12-15 08:35:00.4524|INFO|WindowsFormsPlane.FormParking|Добавили парковку 1
-2020-12-15 08:35:00.4923|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-15 08:35:08.3071|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Sienna
-2020-12-15 08:35:14.4991|INFO|WindowsFormsPlane.FormParking|Неизвестная ошибка 100;500;Sienna
-2020-12-15 08:35:34.5580|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Sienna;OliveDrab;True;1;True;True
-2020-12-15 08:35:57.0555|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red;Chartreuse;True;1;True;False
-2020-12-15 08:36:04.1812|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 08:36:14.4851|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Cyan
-2020-12-15 08:36:17.2231|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 08:36:30.7411|INFO|WindowsFormsPlane.FormParking|Сохранено в файл C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-15 08:36:40.3843|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-15 08:36:40.3904|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-15 08:37:17.8469|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red
-2020-12-15 08:37:19.9269|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 08:37:22.8069|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 08:46:12.0497|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-15 08:46:12.0803|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-15 08:46:21.7250|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red
-2020-12-15 08:46:23.2450|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 08:46:24.1810|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 08:46:32.0211|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 08:59:56.9035|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-15 08:59:56.9344|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-15 09:00:06.0661|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red
-2020-12-15 09:00:07.6341|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 09:00:28.7589|INFO|WindowsFormsPlane.FormParking|Неизвестная ошибка 100;500;Chartreuse;Black;True;1;True;False
-2020-12-15 09:00:49.6403|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red;Black;False;1;True;False
-2020-12-15 09:00:52.4243|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 09:00:53.3204|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 09:10:23.8977|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-15 09:10:23.9257|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-15 09:10:25.9034|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 09:10:35.8314|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Red;Black;False;1;False;False
-2020-12-15 09:10:37.1594|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 09:13:08.7064|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
-2020-12-15 09:13:08.7366|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
-2020-12-15 09:13:11.0256|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
-2020-12-15 09:13:20.2176|INFO|WindowsFormsPlane.FormParking|Добавлен самолет 100;500;Chartreuse
-2020-12-15 09:13:22.0656|INFO|WindowsFormsPlane.FormParking|Сортировка уровней
+2020-12-01 09:44:30.7715|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 09:44:30.8035|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:08:16.0315|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:08:16.0705|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:08:27.8122|INFO|WindowsFormsPlane.FormParking|Переполнение парковки 100;500;Chartreuse
+2020-12-01 10:09:10.8785|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:09:10.9115|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:09:23.8406|INFO|WindowsFormsPlane.FormParking|Изъят автомобиль 100;500;Sienna;0;False;0;False;False с места5
+2020-12-01 10:10:40.1365|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:10:40.1665|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:10:47.3966|INFO|WindowsFormsPlane.FormParking|Изъят автомобиль 100;500;Sienna;0;False;0;False;False с места5
+2020-12-01 10:20:23.8488|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:20:23.8848|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:21:14.9767|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:21:15.0107|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:21:21.4846|INFO|WindowsFormsPlane.FormParking|Переполнение парковки 100;500;Chartreuse
+2020-12-01 10:21:38.5816|INFO|WindowsFormsPlane.FormParking|Изъят автомобиль 100;500;Sienna;0;False;0;False;False с места5
+2020-12-01 10:33:42.9020|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:33:42.9340|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:33:49.8214|INFO|WindowsFormsPlane.FormParking|Изъят самолет 100;500;Sienna;0;False;0;False;False с места5
+2020-12-01 10:51:26.1501|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:51:26.1811|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:51:30.7591|INFO|WindowsFormsPlane.FormParking|Изъят самолет 100;500;Sienna;0;False;0;False;False с места5
+2020-12-01 10:54:10.0348|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:54:10.0709|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:54:15.7501|INFO|WindowsFormsPlane.FormParking|Изъят самолет 100;500;Sienna;0;False;0;False;False с места5
+2020-12-01 10:55:34.4304|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 10:55:34.4625|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 10:55:38.5579|INFO|WindowsFormsPlane.FormParking|Изъят самолет 100;500;Sienna;0;False;0;False;False с места5
+2020-12-01 11:00:02.2445|INFO|WindowsFormsPlane.FormParking|Загружено из файла C:\Users\senya\OneDrive\Рабочий стол\Парковка.txt
+2020-12-01 11:00:02.2775|INFO|WindowsFormsPlane.FormParking|Перешли на парковку1
+2020-12-01 11:00:06.3510|INFO|WindowsFormsPlane.FormParking|Изъят самолет 100;500;Sienna;0;False;0;False;False с места5
+2020-12-01 11:00:09.6229|INFO|WindowsFormsPlane.FormParking|Не найдено

@@ -10,7 +10,7 @@ namespace WindowsFormsPlane
     /// <summary>
     /// Класс отрисовки самолета
     /// </summary>
-    public class RadarPlane : Plane
+    public class RadarPlane : Plane, IEquatable<RadarPlane>
     {
         /// <summary>
         /// Дополнительный цвет
@@ -155,7 +155,6 @@ namespace WindowsFormsPlane
            $"{TypeRadar}{separator}{Antenns}{separator}{Engine}";
         }
 
-
         public void LoadRadarPlane(string info, char dopSeparator) 
         {
 
@@ -174,5 +173,44 @@ namespace WindowsFormsPlane
             }
         }
 
+        /// <summary>
+        /// Метод интерфейса IEquatable для класса SportCar
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public bool Equals(RadarPlane other)
+        {
+            if(other.Radar == this.Radar && other.Engine == this.Engine 
+                && other.Antenns == this.Antenns)
+            {
+                return base.Equals(other);
+            }
+            else
+            {
+                return false; 
+            }
+        }
+        
+        /// <summary>
+        /// Перегрузка метода от object
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                
+            return false;
+            }
+            if (!(obj is RadarPlane carObj))
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(carObj);
+            }
+        }
     }
 }

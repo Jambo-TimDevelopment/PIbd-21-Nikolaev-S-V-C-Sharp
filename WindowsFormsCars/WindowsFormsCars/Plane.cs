@@ -10,7 +10,7 @@ namespace WindowsFormsPlane
     /// <summary>
     /// Класс отрисовки самолета
     /// </summary>
-    public class Plane : APlane
+    public class Plane : APlane, IEquatable<Plane>
     {
         /// <summary>
         /// Ширина отрисовки самолета
@@ -130,6 +130,57 @@ namespace WindowsFormsPlane
                 MaxSpeed = Convert.ToInt32(strs[0]);
                 Weight = Convert.ToInt32(strs[1]);
                 MainColor = Color.FromName(strs[2]);
+            }
+        }
+
+        /// <summary>
+        /// Метод интерфейса IEquatable для класса Car
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
+        public bool Equals(Plane other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            if (GetType().Name != other.GetType().Name)
+            {
+                return false;
+            }
+            if (MaxSpeed != other.MaxSpeed)
+            {
+                return false;
+            }
+            if (Weight != other.Weight)
+            {
+                return false;
+            }
+            if (MainColor != other.MainColor)
+            {
+                return false;
+            }
+            return true;
+        }
+      
+        /// <summary>
+        /// Перегрузка метода от object
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (!(obj is Plane carObj))
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(carObj);
             }
         }
     }
